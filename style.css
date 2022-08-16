@@ -14,3 +14,9 @@
 	--black: #000000;
 	--white: #ffffff;
 }
+
+ticker {
+	height: 114px;
+	width: 1189px;
+	background-color: #000000;
+}

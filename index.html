@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./style.css" rel="stylesheet" />
-    <script src="./script.js" defer></script>
-    <title>Document</title>
-  </head>
-  <!-- The website follows an active behavior on click/hold stars appear-->
-  <body>
-    <!--This is where our nav bar lies-->
-    <nav>
-      <!--This nav has two sections, one is the landing page with-->
-      <!-- 1. Logo-->
-      <!-- 2. The burger menu-->
-      <!--On click burger menu-->
-      <!--There is a logo on top left-->
-      <!--There is a list on the left-->
-      <!--The burger menu changes to a close/cross icon to go back to the landing page-->
-      <!-------------------------------------------------->
-      <!------Position of the navbar and the black one when scrolling upward is not understood completely--------->
-      <!-------------------------------------------------->
-    </nav>
-    <header>
-      <!--One large div with off white background-->
-      <!--Inside the div, we have the hero header-->
-      <!--followed by a sub header, and a button-->
-      <!-- button has some mouseover effects, like it pops out-->
-      <!-- It has an active behavior-->
-    </header>
-    <ticker>
-      <!--This is live ticker with information about the event-->
-    </ticker>
-    <intro>
-      <!--This is where we introduce the event-->
-      <!--Sprinkle some icons around-->
-      <!--Text is centered and not aligned to any side-->
-    </intro>
-    <section id="accordian-main-dropdown">
-      <!--There are three items in the list here-->
-      <!-- each div has one header text on the left and one icon on the right-->
-      <!-- the icons on the arrow change direction when toggled to dropdown-->
-      <!-- each item has a text on the left, and a large icon on the right-->
-      <!-- icons have some sort of animation-->
-    </section>
-    <div id="speaker">
-      <!--This is the headline declaring the SPEAKER section-->
-      <!-- here we have one centered header with two stars adjacent on both sides-->
-      <ticker>
-        <!--This is where we have the ticker again-->
-      </ticker>
-    </div>
-    <!--There is some uniform margin/padding here before the speaker-cards-->
-    <div id="speaker-cards-gallery">
-      <!--This is where we make 9 cards-->
-      <!-------------------------------------------------->
-      <!-- It is one giant div, with 9 tiny divs inside-->
-      <!-------------------------------------------------->
-      <!--IDEA(only if there is time): we can set the last child to have a different property and make it centered-->
-      <!--each card-->
-      <!--1. Has an hover effect with the zoom on the picture-->
-      <!--2. Highlights the text i.e. the name-->
-      <!--3. When you click on it, it has a popup in a new window-->
-      <!-------------------------------------------------->
-      <!---What is a card here?---->
-      <!-------------------------------------------------->
-      <!--It is a div box-->
-      <!--It has an image, followed a header and a p tag-->
-      <!-- we may wrap the text part in another div-->
-    </div>
-    <section id="FAQ">
-      <!--follow the same pattern as speaker header-->
-      <div id="accordian-faq-dropdown">
-        <!--There are 6 items in the list here-->
-        <!-- each div has one header text on the left and one icon on the right-->
-        <!-- the icons on the arrow change direction and color when toggled to dropdown-->
-        <!-- each item has a header text and a p tag (description)-->
-      </div>
-    </section>
-    <section id="bottom-call-for-action">
-      <!--basically the heade with new text, subtext, and different button text-->
-      <!-- but the behaviors are similar-->
-    </section>
-    <footer>
-      <!--Flex div-->
-      <!-- Copy right on the left-->
-      <!-- Three social media icons which have the same effect of the buttons, it looks like it pops up-->
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./style.css" rel="stylesheet" />
+		<script src="./script.js" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<!-- The website follows an active behavior on click/hold stars appear-->
+	<body>
+		<!--This is where our nav bar lies-->
+		<nav>
+			<!--This nav has two sections, one is the landing page with-->
+			<!-- 1. Logo-->
+			<!-- 2. The burger menu-->
+			<!--On click burger menu-->
+			<!--There is a logo on top left-->
+			<!--There is a list on the left-->
+			<!--The burger menu changes to a close/cross icon to go back to the landing page-->
+			<!-------------------------------------------------->
+			<!------Position of the navbar and the black one when scrolling upward is not understood completely--------->
+			<!-------------------------------------------------->
+		</nav>
+		<header>
+			<!--One large div with off white background-->
+			<!--Inside the div, we have the hero header-->
+			<!--followed by a sub header, and a button-->
+			<!-- button has some mouseover effects, like it pops out-->
+			<!-- It has an active behavior-->
+		</header>
+		<ticker>
+			<!--This is live ticker with information about the event, created by Ash-->
+			<marquee width="100%" direction="right" height="100px">
+				OCTOBER 25&26, 2022
+			</marquee>
+		</ticker>
+		<intro>
+			<!--This is where we introduce the event-->
+			<!--Sprinkle some icons around-->
+			<!--Text is centered and not aligned to any side-->
+		</intro>
+		<section id="accordian-main-dropdown">
+			<!--There are three items in the list here-->
+			<!-- each div has one header text on the left and one icon on the right-->
+			<!-- the icons on the arrow change direction when toggled to dropdown-->
+			<!-- each item has a text on the left, and a large icon on the right-->
+			<!-- icons have some sort of animation-->
+		</section>
+		<div id="speaker">
+			<!--This is the headline declaring the SPEAKER section-->
+			<!-- here we have one centered header with two stars adjacent on both sides-->
+			<ticker>
+				<!--This is where we have the ticker again-->
+			</ticker>
+		</div>
+		<!--There is some uniform margin/padding here before the speaker-cards-->
+		<div id="speaker-cards-gallery">
+			<!--This is where we make 9 cards-->
+			<!-------------------------------------------------->
+			<!-- It is one giant div, with 9 tiny divs inside-->
+			<!-------------------------------------------------->
+			<!--IDEA(only if there is time): we can set the last child to have a different property and make it centered-->
+			<!--each card-->
+			<!--1. Has an hover effect with the zoom on the picture-->
+			<!--2. Highlights the text i.e. the name-->
+			<!--3. When you click on it, it has a popup in a new window-->
+			<!-------------------------------------------------->
+			<!---What is a card here?---->
+			<!-------------------------------------------------->
+			<!--It is a div box-->
+			<!--It has an image, followed a header and a p tag-->
+			<!-- we may wrap the text part in another div-->
+		</div>
+		<section id="FAQ">
+			<!--follow the same pattern as speaker header-->
+			<div id="accordian-faq-dropdown">
+				<!--There are 6 items in the list here-->
+				<!-- each div has one header text on the left and one icon on the right-->
+				<!-- the icons on the arrow change direction and color when toggled to dropdown-->
+				<!-- each item has a header text and a p tag (description)-->
+			</div>
+		</section>
+		<section id="bottom-call-for-action">
+			<!--basically the heade with new text, subtext, and different button text-->
+			<!-- but the behaviors are similar-->
+		</section>
+		<footer>
+			<!--Flex div-->
+			<!-- Copy right on the left-->
+			<!-- Three social media icons which have the same effect of the buttons, it looks like it pops up-->
+		</footer>
+	</body>
 </html>
