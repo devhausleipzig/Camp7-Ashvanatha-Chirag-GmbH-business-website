@@ -18,7 +18,7 @@
 
 ticker {
 	font-size: 68px;
-	color: #ffffff;
+	color: var(--white);
 }
 
 ticker p {
@@ -56,4 +56,28 @@ ticker p {
 
 .fa-arrow-down {
 	padding-right: 40px;
+}
+
+#speaker-container {
+	height: 420px;
+	background-color: var(--turquoise);
+}
+
+.speaker-card img {
+	height: 457px;
+	width: 457px;
+	margin: 60px 0 20px 20px;
+	border-radius: 25px;
+	object-fit: cover;
+	border: 2px solid black;
+}
+
+.profile-name {
+	padding: 10px 0 10px 20px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.profile-info {
+	padding: 10px 0 10px 20px;
 }
