@@ -17,9 +17,12 @@
 }
 
 ticker {
-	/* background-color: #000000; */
 	font-size: 68px;
 	color: #ffffff;
+}
+
+ticker p {
+	padding-top: 20px;
 }
 
 .accordion-title {
