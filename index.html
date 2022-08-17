@@ -16,30 +16,62 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
 		/>
-		<title>Ash Chi GmbH</title>
+		<title>+Ash Chi GmbH+</title>
 	</head>
 	<!-- The website follows an active behavior on click/hold stars appear-->
 	<body>
 		<!--This is where our nav bar lies-->
-		<nav>
-			<!--This nav has two sections, one is the landing page with-->
-			<!-- 1. Logo-->
-			<!-- 2. The burger menu-->
-			<!--On click burger menu-->
-			<!--There is a logo on top left-->
-			<!--There is a list on the left-->
-			<!--The burger menu changes to a close/cross icon to go back to the landing page-->
-			<!-------------------------------------------------->
-			<!------Position of the navbar and the black one when scrolling upward is not understood completely--------->
-			<!-------------------------------------------------->
+		<nav id="navbar">
+			<div id="navbar-logo">
+				<div id="main-logo">
+					<div id="pink-star" class="logo-animate"></div>
+					<div id="blue-star" class="logo-animate"></div>
+				</div>
+			</div>
+
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+					<span></span>
+				</label>
+				<div>
+					<ul class="menu__box">
+						<li><img src="./img/hero-disco-conf-svg.svg" /></li>
+						<li><a class="menu__item" href="#">About</a></li>
+						<li><a class="menu__item" href="#">Global</a></li>
+						<li><a class="menu__item" href="#">Virtual</a></li>
+						<li><a class="menu__item" href="#">Curiosity-Led</a></li>
+						<li><a class="menu__item" href="#">Speakers</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<header>
-			<!--One large div with off white background-->
-			<!--Inside the div, we have the hero header-->
-			<!--followed by a sub header, and a button-->
-			<!-- button has some mouseover effects, like it pops out-->
-			<!-- It has an active behavior-->
+			<div id="hero-img-box">
+				<img id="hero-img" src="./img/hero-img.svg" />
+				<p id="hero-txt">
+					A journey into discovery, design, and research by Maze
+				</p>
+				<div id="btn-box">
+					<button class="btn">REGISTER FOR FREE</button>
+				</div>
+			</div>
 		</header>
+		<div class="a-lot-of-text">
+			<div id="random-imgs">
+				<img class="medium-icon" src="./img/clover-solid.svg" />
+				<img class="small-icon" src="./img/star-solid.svg" />
+				<img src="./img/magnifying_glass.svg" />
+			</div>
+
+			<p>
+				Discovery is a mindset. It transforms questions into decisions, data
+				into stories, and insights into direction.<br /><br />
+				Join us at Disco Conf to embrace the power in curiosity, collaboration,
+				and continuous learning.
+			</p>
+			<img class="map-icon" src="./img/about_map.svg" />
+		</div>
 		<ticker>
 			<!--This is live ticker with information about the event, created by Ash-->
 			<marquee
