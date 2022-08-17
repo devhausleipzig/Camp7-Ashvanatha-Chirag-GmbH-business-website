@@ -53,17 +53,156 @@
 			<!-- the icons on the arrow change direction when toggled to dropdown-->
 			<!-- each item has a text on the left, and a large icon on the right-->
 			<!-- icons have some sort of animation-->
+			<!-- +++++++GLOBAL+++++++ -->
+			<div class="accordion-container">
+				<div class="accordion-title">
+					<h3>GLOBAL</h3>
+					<i class="fa-solid fa-arrow-down"></i>
+				</div>
+				<div class="accordion-body">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam.
+					</p>
+					<img src="./img/discoconf-global.avif" alt="globe" />
+				</div>
+			</div>
+			<!-- +++++++VIRTUAL+++++++  -->
+			<div class="accordion-container">
+				<div class="accordion-title">
+					<h3>VIRTUAL</h3>
+					<i class="fa-solid fa-arrow-down"></i>
+				</div>
+				<div class="accordion-body">
+					<p>
+						An online conference by design—Disco Conf takes place remotely and
+						welcomes all travelers across the information superhighway.
+					</p>
+					<img src="./img/discoconf-virtual.avif" alt="computer" />
+				</div>
+			</div>
+			<!-- +++++++CURIOSITY-LED+++++++ -->
+			<div class="accordion-container">
+				<div class="accordion-title">
+					<h3>CURIOSITY-LED</h3>
+					<i class="fa-solid fa-arrow-down"></i>
+				</div>
+				<div class="accordion-body">
+					<p>
+						Born of the explorer’s spirit and drive to learn, Disco Conf
+						inspires the pursuit of questions and building from insight.
+					</p>
+					<img
+						src="./img/discoconf-curiosity-led-new.avif"
+						alt="spying glasses"
+					/>
+				</div>
+			</div>
 		</section>
-		<div id="speaker">
-			<!--This is the headline declaring the SPEAKER section-->
+		<div id="speaker-container">
+			<!--This is the headline declaring the SPEAKER section, created by Ash-->
 			<!-- here we have one centered header with two stars adjacent on both sides-->
-			<ticker>
-				<!--This is where we have the ticker again-->
-			</ticker>
+			<i class="fa-solid fa-star" style="color: #f290e8"></i>
+			<h2 style="font-size: 190px; text-align: center">SPEAKERS</h2>
+			<i class="fa-solid fa-star" style="color: #b8b2f2"></i>
 		</div>
+		<ticker>
+			<marquee
+				behavior="scroll"
+				width="100%"
+				direction="right"
+				height="100px"
+				scrollamount="3"
+				bgcolor="black"
+			>
+				<p>OCTOBER 25&26, 2022 OCTOBER 25&26, 2022 OCTOBER 25&26, 2022</p>
+			</marquee>
+		</ticker>
 		<!--There is some uniform margin/padding here before the speaker-cards-->
 		<div id="speaker-cards-gallery">
 			<!--This is where we make 9 cards-->
+			<!-- Speaker 1 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/michaela-dam-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">MICHAELA DAM</p>
+				<p class="profile-info">Founder | Robotic Institute</p>
+			</div>
+			<!-- Speaker 2 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/jurica-koletic-unsplash.jpg"
+					alt="profil picture man"
+				/>
+				<p class="profile-name">GONZALO RODRIGUEZ</p>
+				<p class="profile-info">Data Analyst Lead | PowerRangers Enterprise</p>
+			</div>
+			<!-- Speaker 3 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/zoe-fernandez-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">CORINNA JUERGENS</p>
+				<p class="profile-info">Co-Founder | HENKEL GmbH</p>
+			</div>
+			<!-- Speaker 4 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/vince-veras-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">Vera Lindemann</p>
+				<p class="profile-info">Research Lead | Devhaus Leipzig</p>
+			</div>
+			<!-- Speaker 5 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/joseph-gonzalez-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">JOSEPH GONZALEZ</p>
+				<p class="profile-info">Model Scout | Americas Next Topmodel</p>
+			</div>
+			<!-- Speaker 6 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/christopher-campbell-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">CHRISTOPHER CAMPBELL</p>
+				<p class="profile-info">AI Photographer | LabAesthetics</p>
+			</div>
+			<!-- Speaker 7 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/julian-wan-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">Julian Wan</p>
+				<p class="profile-info">UX Artist | University of Ohio</p>
+			</div>
+			<!-- Speaker 8 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/may-gauthier-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">May Gauthier</p>
+				<p class="profile-info">Forest Guide | Google Maps</p>
+			</div>
+			<!-- Speaker 9 -->
+			<div class="speaker-card">
+				<img
+					src="img/profilepics/podpros-unsplash.jpg"
+					alt="profil picture woman"
+				/>
+				<p class="profile-name">Podolski Prodoskaya</p>
+				<p class="profile-info">Business Analyst | SAP</p>
+			</div>
 			<!-------------------------------------------------->
 			<!-- It is one giant div, with 9 tiny divs inside-->
 			<!-------------------------------------------------->
@@ -81,7 +220,7 @@
 		</div>
 		<section id="FAQ">
 			<!--follow the same pattern as speaker header-->
-			<div id="accordian-faq-dropdown">
+			<div id="accordion-faq-dropdown">
 				<!--There are 6 items in the list here-->
 				<!-- each div has one header text on the left and one icon on the right-->
 				<!-- the icons on the arrow change direction and color when toggled to dropdown-->
