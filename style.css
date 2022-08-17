@@ -185,3 +185,45 @@ ticker p {
 .unhidden {
 	display: contents;
 }
+
+footer {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 119px;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+#copyright {
+	font-size: x-large;
+	margin-left: 20px;
+}
+
+#social-media {
+	display: flex;
+	justify-content: space-around;
+}
+.social-circle {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 45px;
+	width: 45px;
+	border-radius: 999px;
+	margin: 0 10px;
+}
+
+#social-circle-linkedin {
+	background-color: #6c64ce;
+}
+
+#social-circle-twitter {
+	background-color: #f290e8;
+}
+
+#social-circle-instagram {
+	background-color: #38b3d1;
+}
