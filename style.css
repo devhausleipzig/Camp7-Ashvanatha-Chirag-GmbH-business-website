@@ -31,7 +31,7 @@ ticker p {
 	justify-content: space-between;
 	height: 158px;
 	background-color: var(--lightPurple);
-	padding-left: 40px;
+	padding: 0 40px;
 	font-size: 78px;
 	font-weight: 100;
 	border: 2px solid black;
@@ -48,14 +48,19 @@ ticker p {
 	font-size: 80px;
 }
 
+.hidden {
+	display: none;
+}
+
+.upside-down {
+	transform: rotate(180deg);
+	color: white;
+}
+
 .accordion-container img {
 	height: 300px;
 	width: 300px;
 	padding: 20px;
-}
-
-.fa-arrow-down {
-	padding-right: 40px;
 }
 
 #speaker-container {
