@@ -227,12 +227,14 @@ header {
 }
 
 ticker {
+	display: flex;
+	align-items: center;
 	font-size: 68px;
 	color: var(--white);
 }
 
 ticker p {
-	padding-top: 20px;
+	padding: 20px;
 }
 
 .accordion-title {
