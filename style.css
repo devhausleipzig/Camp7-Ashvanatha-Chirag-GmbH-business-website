@@ -142,6 +142,10 @@ ticker p {
 	font-weight: 100;
 }
 
+#acc-faq-body {
+	display: none;
+}
+
 .accordion-faq-body {
 	display: flex;
 	justify-content: space-between;
