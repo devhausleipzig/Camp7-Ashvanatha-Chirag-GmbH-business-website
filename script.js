@@ -18,3 +18,10 @@ accArrowCuriosity.addEventListener("click", function (event) {
 	accBodyCuriosity.classList.toggle("hidden");
 	accArrowCuriosity.classList.toggle("upside-down");
 });
+
+const accArrowWhen = document.querySelector("#acc-arrow-when");
+const accFaqBody = document.querySelector("#acc-faq-body");
+accArrowWhen.addEventListener("click", function (event) {
+	accFaqBody.classList.toggle("unhidden");
+	accArrowWhen.classList.toggle("upside-down");
+});

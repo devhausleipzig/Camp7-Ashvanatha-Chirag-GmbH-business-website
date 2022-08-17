@@ -140,20 +140,27 @@ ticker p {
 	padding: 0 40px;
 	font-size: 78px;
 	font-weight: 100;
-}
-
-#acc-faq-body {
-	display: none;
+	/* border-bottom: 2px solid black; */
 }
 
 .accordion-faq-body {
-	display: flex;
-	justify-content: space-between;
+	display: none;
 	height: auto;
 	background-color: var(--lightBeige);
 	padding: 40px 0 40px 40px;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 	font-size: 25px;
+}
+
+.accordion-faq-body p {
+	display: flex;
+	justify-content: space-around;
+	padding: 40px 0 40px 40px;
+	background-color: var(--lightBeige);
 	border-bottom: 2px solid black;
+}
+
+.unhidden {
+	display: contents;
 }
