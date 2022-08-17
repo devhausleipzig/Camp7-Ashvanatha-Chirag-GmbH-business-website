@@ -18,12 +18,88 @@
 nav {
   width: 100%;
   height: 150px;
-  background-color: #b8b2f2;
   position: fixed;
   top: 0;
   transition: 0.3s;
 }
 
+/*
+////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// Experiment /////////////////////////////////////////////////
+*/
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgb(57, 56, 56);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// Experiment Finished/////////////////////////////////////////
+*/
 #main-logo {
   width: 100px;
   height: 100px;
@@ -39,26 +115,112 @@ nav {
   width: 30px;
   height: 30px;
   position: relative;
+  background-color: white;
 }
 
 #pink-star {
   top: 15px;
   right: 20px;
-  background-color: #f290e8;
 }
 
 #blue-star {
   top: 25px;
   left: 90px;
-  background-color: #38b3d1;
 }
 
-#main-logo:hover .logo-animate {
+#main-logo:hover #pink-star {
   animation: change-color 2.5s infinite;
+  background-color: #f290e8;
+}
+
+#main-logo:hover #blue-star {
+  animation: change-color 4s infinite;
+  background-color: #38b3d1;
 }
 
 @keyframes change-color {
   50% {
     background-color: white;
   }
+}
+
+#menu-bars {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+}
+
+header {
+  padding-top: 40px;
+  background-color: var(--lightBeige);
+  height: 546px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-img {
+  width: 1143px;
+  height: 179px;
+}
+
+#hero-txt {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.btn {
+  width: 462px;
+  height: 84px;
+  border-radius: 50px;
+  border-color: #000000;
+  background: blue;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#btn-box {
+  text-align: center;
+}
+
+.btn {
+  transition: transform 250ms;
+  transition: box-shadow;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 8px black;
+}
+
+.tick-tick-boom {
+  height: 82px;
+  background-color: #000000;
+}
+
+.a-lot-of-text {
+  height: 1773px;
+  background-color: #6c64ce;
+  text-align: center;
+}
+
+.small-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.medium-icon {
+  height: 120px;
+  width: 120px;
+}
+
+.a-lot-of-text p {
+  font-size: 80px;
+  color: white;
+  width: 60vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
