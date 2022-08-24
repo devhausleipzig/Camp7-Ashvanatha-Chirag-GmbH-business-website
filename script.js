@@ -53,6 +53,7 @@ accArrowWait.addEventListener("click", function (event) {
 	accFaqBody5.classList.toggle("unhidden");
 	accArrowWait.classList.toggle("upside-down");
 });
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
 	let currentScrollPos = window.pageYOffset;
