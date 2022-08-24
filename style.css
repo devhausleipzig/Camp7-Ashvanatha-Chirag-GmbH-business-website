@@ -16,14 +16,65 @@
 	--white: #ffffff;
 }
 
-ticker {
-	font-size: 68px;
-	color: var(--white);
+.ticker-styling {
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	background-color: #000000;
+	color: #ffffff;
 }
 
-ticker p {
+.ticker-styling p {
+	position: relative;
+	font-size: xx-large;
+	width: 100%;
+	height: 100%;
 	padding-top: 20px;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-animation: scroll-left 2s linear infinite;
+	-webkit-animation: scroll-left 2s linear infinite;
+	animation: scroll-left 15s linear infinite;
 }
+@-moz-keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+	}
+}
+
+@-webkit-keyframes scroll-left {
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
+}
+
+@keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+/* ticker p {
+	padding-top: 20px;
+} */
 
 .accordion-title {
 	display: flex;
