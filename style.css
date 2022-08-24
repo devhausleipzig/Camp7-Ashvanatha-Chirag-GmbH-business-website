@@ -215,15 +215,7 @@ header {
 	width: 400px;
 	padding: 700px 30px 20px 0;
 }
-ticker {
-	display: flex;
-	align-items: center;
-	font-size: 68px;
-	color: var(--white);
-}
 
-ticker p {
-	padding: 20px;
 .ticker-styling {
 	height: 80px;
 	width: 100%;
