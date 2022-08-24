@@ -46,7 +46,6 @@ nav {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 99;
 	background: black;
 	color: white;
 	list-style: none;
@@ -55,9 +54,9 @@ nav {
 
 .menu a {
 	text-decoration: none;
-	color: white;
-	font-size: 48px;
 	font-weight: bolder;
+	color: white;
+	font-size: 3rem;
 }
 
 .menu a:hover {
