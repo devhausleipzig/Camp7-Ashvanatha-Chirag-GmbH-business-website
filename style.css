@@ -35,6 +35,7 @@ nav {
 
 #icon-after {
 	display: none;
+	color: white;
 }
 
 .menu {
@@ -52,6 +53,16 @@ nav {
 	padding-top: 4rem;
 }
 
+.menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 48px;
+	font-weight: bolder;
+}
+
+.menu a:hover {
+	color: #6c64ce;
+}
 .showMenu {
 	transform: translateX(0);
 }
