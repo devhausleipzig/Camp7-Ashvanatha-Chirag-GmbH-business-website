@@ -1,68 +1,68 @@
 const accArrowGlobal = document.querySelector("#acc-arrow-global");
 const accBodyGlobal = document.querySelector("#acc-body-global");
 accArrowGlobal.addEventListener("click", function (event) {
-	accBodyGlobal.classList.toggle("hidden");
-	accArrowGlobal.classList.toggle("upside-down");
+  accBodyGlobal.classList.toggle("hidden");
+  accArrowGlobal.classList.toggle("upside-down");
 });
 
 const accArrowVirtual = document.querySelector("#acc-arrow-virtual");
 const accBodyVirtual = document.querySelector("#acc-body-virtual");
 accArrowVirtual.addEventListener("click", function (event) {
-	accBodyVirtual.classList.toggle("hidden");
-	accArrowVirtual.classList.toggle("upside-down");
+  accBodyVirtual.classList.toggle("hidden");
+  accArrowVirtual.classList.toggle("upside-down");
 });
 
 const accArrowCuriosity = document.querySelector("#acc-arrow-curiosity");
 const accBodyCuriosity = document.querySelector("#acc-body-curiosity");
 accArrowCuriosity.addEventListener("click", function (event) {
-	accBodyCuriosity.classList.toggle("hidden");
-	accArrowCuriosity.classList.toggle("upside-down");
+  accBodyCuriosity.classList.toggle("hidden");
+  accArrowCuriosity.classList.toggle("upside-down");
 });
 
 const accArrowWhen = document.querySelector("#acc-arrow-when");
 const accFaqBody = document.querySelector("#acc-faq-body");
 accArrowWhen.addEventListener("click", function (event) {
-	accFaqBody.classList.toggle("unhidden");
-	accArrowWhen.classList.toggle("upside-down");
+  accFaqBody.classList.toggle("unhidden");
+  accArrowWhen.classList.toggle("upside-down");
 });
 
 const accArrowWhere = document.querySelector("#acc-arrow-where");
 const accFaqBody2 = document.querySelector("#acc-faq-body2");
 accArrowWhere.addEventListener("click", function (event) {
-	accFaqBody2.classList.toggle("unhidden");
-	accArrowWhere.classList.toggle("upside-down");
+  accFaqBody2.classList.toggle("unhidden");
+  accArrowWhere.classList.toggle("upside-down");
 });
 
 const accArrowWill = document.querySelector("#acc-arrow-will");
 const accFaqBody3 = document.querySelector("#acc-faq-body3");
 accArrowWill.addEventListener("click", function (event) {
-	accFaqBody3.classList.toggle("unhidden");
-	accArrowWill.classList.toggle("upside-down");
+  accFaqBody3.classList.toggle("unhidden");
+  accArrowWill.classList.toggle("upside-down");
 });
 
 const accArrowFree = document.querySelector("#acc-arrow-free");
 const accFaqBody4 = document.querySelector("#acc-faq-body4");
 accArrowFree.addEventListener("click", function (event) {
-	accFaqBody4.classList.toggle("unhidden");
-	accArrowFree.classList.toggle("upside-down");
+  accFaqBody4.classList.toggle("unhidden");
+  accArrowFree.classList.toggle("upside-down");
 });
 
 const accArrowWait = document.querySelector("#acc-arrow-wait");
 const accFaqBody5 = document.querySelector("#acc-faq-body5");
 accArrowWait.addEventListener("click", function (event) {
-	accFaqBody5.classList.toggle("unhidden");
-	accArrowWait.classList.toggle("upside-down");
+  accFaqBody5.classList.toggle("unhidden");
+  accArrowWait.classList.toggle("upside-down");
 });
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-	let currentScrollPos = window.pageYOffset;
-	if (prevScrollpos > currentScrollPos) {
-		document.getElementById("navbar").style.top = "0";
-	} else {
-		document.getElementById("navbar").style.top = "-150px";
-	}
-	prevScrollpos = currentScrollPos;
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
 };
 
 ////////// Toggle Menu Button //////
@@ -73,16 +73,17 @@ const closeIcon = document.querySelector("#icon-after");
 const menuIcon = document.querySelector("#icon-before");
 
 function toggleMenu() {
-	if (menu.classList.contains("showMenu")) {
-		menu.classList.remove("showMenu");
-		closeIcon.style.display = "none";
-		menuIcon.style.display = "block";
-	} else {
-		menu.classList.add("showMenu");
-		closeIcon.style.display = "block";
-		menuIcon.style.display = "none";
-	}
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.opacity = "0";
+    menuIcon.style.opacity = "1";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.opacity = "1";
+    menuIcon.style.opacity = "0";
+  }
 }
 
-hamburger.addEventListener("click", toggleMenu);
+menuIcon.addEventListener("click", toggleMenu);
+closeIcon.addEventListener("click", toggleMenu);
 ////////////////////////////////////////////////////

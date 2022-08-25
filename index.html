@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="./style.css" rel="stylesheet" />
-		<script src="./script.js" defer></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Public+Sans:ital@1&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-		/>
-		<title>+Ash Chi GmbH+</title>
-	</head>
-	<!-- The website follows an active behavior on click/hold stars appear-->
-	<body>
-		<!--This is where our nav bar lies-->
-		<nav id="navbar">
-			<div id="navbar-logo">
-				<div id="main-logo">
-					<div id="pink-star" class="logo-animate"></div>
-					<div id="blue-star" class="logo-animate"></div>
-				</div>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>+Ash Chi GmbH+</title>
+  </head>
+  <!-- The website follows an active behavior on click/hold stars appear-->
+  <body>
+    <div class="hamburger">
+      <i id="icon-before" class="fa-solid fa-bars"></i>
+      <i id="icon-after" class="fa-solid fa-xmark"></i>
+    </div>
+    <ul class="menu">
+      <li><img src="./img/hero-disco-conf-svg.svg" /></li>
+      <li><a class="menu-item" href="#">About</a></li>
+      <li><a class="menu-item" href="#">Global</a></li>
+      <li><a class="menu-item" href="#">Virtual</a></li>
+      <li><a class="menu-item" href="#">Curiosity-Led</a></li>
+      <li><a class="menu-item" href="#">Speakers</a></li>
+    </ul>
+    <!--This is where our nav bar lies-->
+    <nav id="navbar">
+      <div id="navbar-logo">
+        <div id="main-logo">
+          <div id="pink-star" class="logo-animate"></div>
+          <div id="blue-star" class="logo-animate"></div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div id="hero-img-box">
+        <img id="hero-img" src="./img/hero-img.svg" />
+        <p id="hero-txt">
+          A journey into discovery, design, and research by Maze
+        </p>
+        <div id="btn-box">
+          <button class="btn">REGISTER FOR FREE</button>
+        </div>
+      </div>
+    </header>
+    <div class="a-lot-of-text-wrapper">
+      <ticker class="ticker-styling">
+        <!--This is live ticker with information about the event, created by Ash-->
+        <p>OCTOBER 25&26, 2022 OCTOBER 25&26, 2022 OCTOBER 25&26, 2022</p>
+      </ticker>
+      <div class="a-lot-of-text">
+        <div id="random-imgs">
+          <i class="fa-solid fa-star"></i>
+          <img class="medium-icon" src="./img/magnifying_glass.svg" />
+          <i class="fa-solid fa-star" id="fastar"></i>
+        </div>
+        <p>
+          Discovery is a mindset. <br />It transforms questions into decisions,
+          data into stories, and insights into direction.<br /><br />
+          Join us at Disco Conf to embrace the power in curiosity,
+          collaboration, and continuous learning.
+        </p>
+        <img class="map-icon" src="./img/about_map.svg" />
+      </div>
+    </div>
 
 			<div class="hamburger">
 				<i id="icon-before" class="fa-solid fa-bars"></i>
@@ -71,336 +115,335 @@
 			</p>
 			<img class="map-icon" src="./img/about_map.svg" />
 		</div>
+    <intro>
+      <!--This is where we introduce the event-->
+      <!--Sprinkle some icons around-->
+      <!--Text is centered and not aligned to any side-->
+    </intro>
+    <section id="accordian-main-dropdown">
+      <!--There are three items in the list here-->
+      <!-- each div has one header text on the left and one icon on the right-->
+      <!-- the icons on the arrow change direction when toggled to dropdown-->
+      <!-- each item has a text on the left, and a large icon on the right-->
+      <!-- icons have some sort of animation-->
+      <!-- +++++++GLOBAL+++++++ -->
+      <div class="accordion-container">
+        <div class="accordion-title">
+          <h3>GLOBAL</h3>
+          <i class="fa-solid fa-arrow-down" id="acc-arrow-global"></i>
+        </div>
+        <div class="accordion-body" id="acc-body-global">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <img src="./img/discoconf-global.avif" alt="globe" />
+        </div>
+      </div>
+      <!-- +++++++VIRTUAL+++++++  -->
+      <div class="accordion-container">
+        <div class="accordion-title">
+          <h3>VIRTUAL</h3>
+          <i class="fa-solid fa-arrow-down" id="acc-arrow-virtual"></i>
+        </div>
+        <div class="accordion-body" id="acc-body-virtual">
+          <p>
+            An online conference by design—Disco Conf takes place remotely and
+            welcomes all travelers across the information superhighway.
+          </p>
+          <img src="./img/discoconf-virtual.avif" alt="computer" />
+        </div>
+      </div>
+      <!-- +++++++CURIOSITY-LED+++++++ -->
+      <div class="accordion-container">
+        <div class="accordion-title">
+          <h3>CURIOSITY-LED</h3>
+          <i class="fa-solid fa-arrow-down" id="acc-arrow-curiosity"></i>
+        </div>
+        <div class="accordion-body" id="acc-body-curiosity">
+          <p>
+            Born of the explorer’s spirit and drive to learn, Disco Conf
+            inspires the pursuit of questions and building from insight.
+          </p>
+          <img
+            src="./img/discoconf-curiosity-led-new.avif"
+            alt="spying glasses"
+          />
+        </div>
+      </div>
+    </section>
+    <div id="speaker-container">
+      <!--This is the headline declaring the SPEAKER section, created by Ash-->
+      <!-- here we have one centered header with two stars adjacent on both sides-->
+      <i class="fa-solid fa-star" style="color: #f290e8"></i>
+      <h2 style="font-size: 190px; text-align: center">SPEAKERS</h2>
+      <i class="fa-solid fa-star" style="color: #b8b2f2"></i>
+    </div>
+    <ticker class="ticker-styling">
+      <p>OCTOBER 25&26, 2022 OCTOBER 25&26, 2022 OCTOBER 25&26, 2022</p>
+    </ticker>
+    <!--There is some uniform margin/padding here before the speaker-cards-->
+    <section id="speaker-gallery">
+      <div id="speaker-cards-gallery">
+        <!--This is where we make 9 cards-->
+        <!-- Speaker 1 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/michaela-dam-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">MICHAELA DAM</p>
+          <p class="profile-info">Founder | Robotic Institute</p>
+        </div>
+        <!-- Speaker 2 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/jurica-koletic-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">GONZALO RODRIGUEZ</p>
+          <p class="profile-info">
+            Data Analyst Lead | PowerRangers Enterprise
+          </p>
+        </div>
+        <!-- Speaker 3 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/zoe-fernandez-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">CORINNA JUERGENS</p>
+          <p class="profile-info">Co-Founder | HENKEL GmbH</p>
+        </div>
+        <!-- Speaker 4 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/vince-veras-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">Vera Lindemann</p>
+          <p class="profile-info">Research Lead | Devhaus Leipzig</p>
+        </div>
+        <!-- Speaker 5 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/joseph-gonzalez-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">JOSEPH GONZALEZ</p>
+          <p class="profile-info">Model Scout | Americas Next Topmodel</p>
+        </div>
+        <!-- Speaker 6 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/christopher-campbell-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">CHRISTOPHER CAMPBELL</p>
+          <p class="profile-info">AI Photographer | LabAesthetics</p>
+        </div>
+        <!-- Speaker 7 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/julian-wan-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">Julian Wan</p>
+          <p class="profile-info">UX Artist | University of Ohio</p>
+        </div>
+        <!-- Speaker 8 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/may-gauthier-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">May Gauthier</p>
+          <p class="profile-info">Forest Guide | Google Maps</p>
+        </div>
+        <!-- Speaker 9 -->
+        <div class="speaker-card">
+          <div id="zoomBOut">
+            <div
+              id="zoomBIn"
+              style="
+                background-image: url(img/profilepics/podpros-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <p class="profile-name">Podolski Prodoskaya</p>
+          <p class="profile-info">Business Analyst | SAP</p>
+        </div>
+        <!-------------------------------------------------->
+        <!-- It is one giant div, with 9 tiny divs inside-->
+        <!-------------------------------------------------->
+        <!--IDEA(only if there is time): we can set the last child to have a different property and make it centered-->
+        <!--each card-->
+        <!--1. Has an hover effect with the zoom on the picture-->
+        <!--2. Highlights the text i.e. the name-->
+        <!--3. When you click on it, it has a popup in a new window-->
+        <!-------------------------------------------------->
+        <!---What is a card here?---->
+        <!-------------------------------------------------->
+        <!--It is a div box-->
+        <!--It has an image, followed a header and a p tag-->
+        <!-- we may wrap the text part in another div-->
+      </div>
+    </section>
 
-		<intro>
-			<!--This is where we introduce the event-->
-			<!--Sprinkle some icons around-->
-			<!--Text is centered and not aligned to any side-->
-		</intro>
-		<section id="accordian-main-dropdown">
-			<!--There are three items in the list here-->
-			<!-- each div has one header text on the left and one icon on the right-->
-			<!-- the icons on the arrow change direction when toggled to dropdown-->
-			<!-- each item has a text on the left, and a large icon on the right-->
-			<!-- icons have some sort of animation-->
-			<!-- +++++++GLOBAL+++++++ -->
-			<div class="accordion-container">
-				<div class="accordion-title">
-					<h3>GLOBAL</h3>
-					<i class="fa-solid fa-arrow-down" id="acc-arrow-global"></i>
-				</div>
-				<div class="accordion-body" id="acc-body-global">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam.
-					</p>
-					<img src="./img/discoconf-global.avif" alt="globe" />
-				</div>
-			</div>
-			<!-- +++++++VIRTUAL+++++++  -->
-			<div class="accordion-container">
-				<div class="accordion-title">
-					<h3>VIRTUAL</h3>
-					<i class="fa-solid fa-arrow-down" id="acc-arrow-virtual"></i>
-				</div>
-				<div class="accordion-body" id="acc-body-virtual">
-					<p>
-						An online conference by design—Disco Conf takes place remotely and
-						welcomes all travelers across the information superhighway.
-					</p>
-					<img src="./img/discoconf-virtual.avif" alt="computer" />
-				</div>
-			</div>
-			<!-- +++++++CURIOSITY-LED+++++++ -->
-			<div class="accordion-container">
-				<div class="accordion-title">
-					<h3>CURIOSITY-LED</h3>
-					<i class="fa-solid fa-arrow-down" id="acc-arrow-curiosity"></i>
-				</div>
-				<div class="accordion-body" id="acc-body-curiosity">
-					<p>
-						Born of the explorer’s spirit and drive to learn, Disco Conf
-						inspires the pursuit of questions and building from insight.
-					</p>
-					<img
-						src="./img/discoconf-curiosity-led-new.avif"
-						alt="spying glasses"
-					/>
-				</div>
-			</div>
-		</section>
-		<div id="speaker-container">
-			<!--This is the headline declaring the SPEAKER section, created by Ash-->
-			<!-- here we have one centered header with two stars adjacent on both sides-->
-			<i class="fa-solid fa-star" style="color: #f290e8"></i>
-			<h2 style="font-size: 190px; text-align: center">SPEAKERS</h2>
-			<i class="fa-solid fa-star" style="color: #b8b2f2"></i>
-		</div>
-		<ticker class="ticker-styling">
-			<p>OCTOBER 25&26, 2022 OCTOBER 25&26, 2022 OCTOBER 25&26, 2022</p>
-		</ticker>
-		<!--There is some uniform margin/padding here before the speaker-cards-->
-		<section id="speaker-gallery">
-			<div id="speaker-cards-gallery">
-				<!--This is where we make 9 cards-->
-				<!-- Speaker 1 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/michaela-dam-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">MICHAELA DAM</p>
-					<p class="profile-info">Founder | Robotic Institute</p>
-				</div>
-				<!-- Speaker 2 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/jurica-koletic-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">GONZALO RODRIGUEZ</p>
-					<p class="profile-info">
-						Data Analyst Lead | PowerRangers Enterprise
-					</p>
-				</div>
-				<!-- Speaker 3 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/zoe-fernandez-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">CORINNA JUERGENS</p>
-					<p class="profile-info">Co-Founder | HENKEL GmbH</p>
-				</div>
-				<!-- Speaker 4 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/vince-veras-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">Vera Lindemann</p>
-					<p class="profile-info">Research Lead | Devhaus Leipzig</p>
-				</div>
-				<!-- Speaker 5 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/joseph-gonzalez-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">JOSEPH GONZALEZ</p>
-					<p class="profile-info">Model Scout | Americas Next Topmodel</p>
-				</div>
-				<!-- Speaker 6 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/christopher-campbell-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">CHRISTOPHER CAMPBELL</p>
-					<p class="profile-info">AI Photographer | LabAesthetics</p>
-				</div>
-				<!-- Speaker 7 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/julian-wan-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">Julian Wan</p>
-					<p class="profile-info">UX Artist | University of Ohio</p>
-				</div>
-				<!-- Speaker 8 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/may-gauthier-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">May Gauthier</p>
-					<p class="profile-info">Forest Guide | Google Maps</p>
-				</div>
-				<!-- Speaker 9 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/podpros-unsplash.jpg);
-							"
-						></div>
-					</div>
-					<p class="profile-name">Podolski Prodoskaya</p>
-					<p class="profile-info">Business Analyst | SAP</p>
-				</div>
-				<!-------------------------------------------------->
-				<!-- It is one giant div, with 9 tiny divs inside-->
-				<!-------------------------------------------------->
-				<!--IDEA(only if there is time): we can set the last child to have a different property and make it centered-->
-				<!--each card-->
-				<!--1. Has an hover effect with the zoom on the picture-->
-				<!--2. Highlights the text i.e. the name-->
-				<!--3. When you click on it, it has a popup in a new window-->
-				<!-------------------------------------------------->
-				<!---What is a card here?---->
-				<!-------------------------------------------------->
-				<!--It is a div box-->
-				<!--It has an image, followed a header and a p tag-->
-				<!-- we may wrap the text part in another div-->
-			</div>
-		</section>
+    <section id="FAQ">
+      <!--follow the same pattern as speaker header, created by Ash-->
+      <div id="faq-container">
+        <i class="fa-solid fa-star" style="color: #6c64ce"></i>
+        <h2 style="font-size: 190px; text-align: center">FAQ</h2>
+        <i class="fa-solid fa-star" style="color: #38b3d1"></i>
+      </div>
+      <div id="accordion-faq-dropdown">
+        <!--There are 6 items in the list here-->
+        <!-- each div has one header text on the left and one icon on the right-->
+        <!-- the icons on the arrow change direction and color when toggled to dropdown-->
+        <!-- each item has a header text and a p tag (description)-->
+        <div class="accordion-container">
+          <!-- +++++++Q1: When is Disco Conf? +++++++ -->
+          <div
+            class="accordion-faq-title"
+            style="border-bottom: 2px solid black"
+          >
+            <h6>When is Disco Conf?</h6>
+            <i class="fa-solid fa-arrow-down" id="acc-arrow-when"></i>
+          </div>
+          <div class="accordion-faq-body" id="acc-faq-body">
+            <p>
+              Disco Conf will take place over two days from October 25-26, live
+              streaming from 10am - 4pm daily (🇺🇸ET) / 5pm - 11pm (🇪🇺CET).
+            </p>
+          </div>
 
-		<section id="FAQ">
-			<!--follow the same pattern as speaker header, created by Ash-->
-			<div id="faq-container">
-				<i class="fa-solid fa-star" style="color: #6c64ce"></i>
-				<h2 style="font-size: 190px; text-align: center">FAQ</h2>
-				<i class="fa-solid fa-star" style="color: #38b3d1"></i>
-			</div>
-			<div id="accordion-faq-dropdown">
-				<!--There are 6 items in the list here-->
-				<!-- each div has one header text on the left and one icon on the right-->
-				<!-- the icons on the arrow change direction and color when toggled to dropdown-->
-				<!-- each item has a header text and a p tag (description)-->
-				<div class="accordion-container">
-					<!-- +++++++Q1: When is Disco Conf? +++++++ -->
-					<div
-						class="accordion-faq-title"
-						style="border-bottom: 2px solid black"
-					>
-						<h6>When is Disco Conf?</h6>
-						<i class="fa-solid fa-arrow-down" id="acc-arrow-when"></i>
-					</div>
-					<div class="accordion-faq-body" id="acc-faq-body">
-						<p>
-							Disco Conf will take place over two days from October 25-26, live
-							streaming from 10am - 4pm daily (🇺🇸ET) / 5pm - 11pm (🇪🇺CET).
-						</p>
-					</div>
-
-					<!-- +++++++Q2: Where is it? +++++++ -->
-					<div
-						class="accordion-faq-title"
-						style="border-bottom: 2px solid black"
-					>
-						<h6>Where is it?</h6>
-						<i class="fa-solid fa-arrow-down" id="acc-arrow-where"></i>
-					</div>
-					<div class="accordion-faq-body" id="acc-faq-body2">
-						<p>
-							Just as Maze is globally distributed, Disco Conf is an entirely
-							remote and virtual conference. Join in from anywhere and represent
-							your place among a global audience.
-						</p>
-					</div>
-					<!-- +++++++Q3: Will the conference be recorderd? +++++++ -->
-					<div
-						class="accordion-faq-title"
-						style="border-bottom: 2px solid black"
-					>
-						<h6>Will the conference be recorderd?</h6>
-						<i class="fa-solid fa-arrow-down" id="acc-arrow-will"></i>
-					</div>
-					<div class="accordion-faq-body" id="acc-faq-body3">
-						<p>
-							To keep the good times rolling after Disco Conf ends, we’ll be
-							sharing recordings of our speaker presentations so you can catch
-							up on what you missed—or play back your favorite highlights.
-						</p>
-					</div>
-					<!-- +++++++Q4: Is Disco Conf really free? +++++++ -->
-					<div
-						class="accordion-faq-title"
-						style="border-bottom: 2px solid black"
-					>
-						<h6>Is Disco Conf really free?</h6>
-						<i class="fa-solid fa-arrow-down" id="acc-arrow-free"></i>
-					</div>
-					<div class="accordion-faq-body" id="acc-faq-body4">
-						<p>
-							But I must explain to you how all this mistaken idea of
-							reprobating pleasure and extolling pain arose. To do so, I will
-							give you a complete account of the system, and expound the actual
-							teachings of the great explorer of the truth, the master-builder
-							of human happiness. No one rejects, dislikes or avoids pleasure
-							itself, because it is pleasure, but because those who do not know
-							how to pursue pleasure rationally encounter consequences that are
-							extremely painful.
-						</p>
-					</div>
-					<!-- +++++++Q5: I can’t wait. +++++++ -->
-					<div
-						class="accordion-faq-title"
-						style="border-bottom: 2px solid black"
-					>
-						<h6>
-							I can’t wait til October. Is there a place to stay up to date
-							before the conference?
-						</h6>
-						<i class="fa-solid fa-arrow-down" id="acc-arrow-wait"></i>
-					</div>
-					<div class="accordion-faq-body" id="acc-faq-body5">
-						<p>
-							Once registered you’ll be kept in the loop on all details directly
-							through email. However, The Maze Community will also be unveiling
-							a space to connect and socialize on all things Disco Conf. If you
-							haven’t already joined the Maze Community, you can join the (add
-							link) directory here.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="bottom-call-for-action">
-			<!--basically the heade with new text, subtext, and different button text-->
-			<!-- but the behaviors are similar-->
-		</section>
-		<footer>
-			<!--Flex div-->
-			<!-- Copy right on the left-->
-			<!-- Three social media icons which have the same effect of the buttons, it looks like it pops up-->
-			<div id="copyright">© Ashvanatha Chirag GmbH 2022</div>
-			<div id="social-media">
-				<div class="social-circle" id="social-circle-linkedin">
-					<i class="fa-brands fa-linkedin-in"></i>
-				</div>
-				<div class="social-circle" id="social-circle-twitter">
-					<i class="fa-brands fa-twitter"></i>
-				</div>
-				<div class="social-circle" id="social-circle-instagram">
-					<i class="fa-brands fa-instagram"></i>
-				</div>
-			</div>
-		</footer>
-	</body>
+          <!-- +++++++Q2: Where is it? +++++++ -->
+          <div
+            class="accordion-faq-title"
+            style="border-bottom: 2px solid black"
+          >
+            <h6>Where is it?</h6>
+            <i class="fa-solid fa-arrow-down" id="acc-arrow-where"></i>
+          </div>
+          <div class="accordion-faq-body" id="acc-faq-body2">
+            <p>
+              Just as Maze is globally distributed, Disco Conf is an entirely
+              remote and virtual conference. Join in from anywhere and represent
+              your place among a global audience.
+            </p>
+          </div>
+          <!-- +++++++Q3: Will the conference be recorderd? +++++++ -->
+          <div
+            class="accordion-faq-title"
+            style="border-bottom: 2px solid black"
+          >
+            <h6>Will the conference be recorderd?</h6>
+            <i class="fa-solid fa-arrow-down" id="acc-arrow-will"></i>
+          </div>
+          <div class="accordion-faq-body" id="acc-faq-body3">
+            <p>
+              To keep the good times rolling after Disco Conf ends, we’ll be
+              sharing recordings of our speaker presentations so you can catch
+              up on what you missed—or play back your favorite highlights.
+            </p>
+          </div>
+          <!-- +++++++Q4: Is Disco Conf really free? +++++++ -->
+          <div
+            class="accordion-faq-title"
+            style="border-bottom: 2px solid black"
+          >
+            <h6>Is Disco Conf really free?</h6>
+            <i class="fa-solid fa-arrow-down" id="acc-arrow-free"></i>
+          </div>
+          <div class="accordion-faq-body" id="acc-faq-body4">
+            <p>
+              But I must explain to you how all this mistaken idea of
+              reprobating pleasure and extolling pain arose. To do so, I will
+              give you a complete account of the system, and expound the actual
+              teachings of the great explorer of the truth, the master-builder
+              of human happiness. No one rejects, dislikes or avoids pleasure
+              itself, because it is pleasure, but because those who do not know
+              how to pursue pleasure rationally encounter consequences that are
+              extremely painful.
+            </p>
+          </div>
+          <!-- +++++++Q5: I can’t wait. +++++++ -->
+          <div
+            class="accordion-faq-title"
+            style="border-bottom: 2px solid black"
+          >
+            <h6>
+              I can’t wait til October. Is there a place to stay up to date
+              before the conference?
+            </h6>
+            <i class="fa-solid fa-arrow-down" id="acc-arrow-wait"></i>
+          </div>
+          <div class="accordion-faq-body" id="acc-faq-body5">
+            <p>
+              Once registered you’ll be kept in the loop on all details directly
+              through email. However, The Maze Community will also be unveiling
+              a space to connect and socialize on all things Disco Conf. If you
+              haven’t already joined the Maze Community, you can join the (add
+              link) directory here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom-call-for-action">
+      <!--basically the heade with new text, subtext, and different button text-->
+      <!-- but the behaviors are similar-->
+    </section>
+    <footer>
+      <!--Flex div-->
+      <!-- Copy right on the left-->
+      <!-- Three social media icons which have the same effect of the buttons, it looks like it pops up-->
+      <div id="copyright">© Ashvanatha Chirag GmbH 2022</div>
+      <div id="social-media">
+        <div class="social-circle" id="social-circle-linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="social-circle" id="social-circle-twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="social-circle" id="social-circle-instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
