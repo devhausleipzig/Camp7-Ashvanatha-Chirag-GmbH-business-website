@@ -136,8 +136,9 @@ nav {
 
 header {
 	padding-top: 40px;
+	padding-bottom: 40px;
 	background-color: var(--lightBeige);
-	height: 546px;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -298,7 +299,11 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+<<<<<<< HEAD
 	height: 158px;
+=======
+	/* height: 158px; */
+>>>>>>> f63e7579aedf34a4313a7ece8c9eec14898e7577
 	background-color: var(--lightPurple);
 	padding: 0 40px;
 	font-size: 78px;
@@ -309,7 +314,11 @@ header {
 .accordion-body {
 	display: flex;
 	justify-content: space-between;
+<<<<<<< HEAD
 	height: 500px;
+=======
+	/* height: 500px; */
+>>>>>>> f63e7579aedf34a4313a7ece8c9eec14898e7577
 	background-color: var(--lightBeige);
 	padding: 40px 0 40px 40px;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
