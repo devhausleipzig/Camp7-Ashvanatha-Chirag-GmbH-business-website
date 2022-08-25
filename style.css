@@ -426,7 +426,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 250px;
+	/* margin-top: 250px; change to do*/
 	height: 300px;
 	background-color: var(--pink);
 	color: var(--white);
@@ -514,4 +514,10 @@ footer {
 
 #social-circle-instagram {
 	background-color: #38b3d1;
+}
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 1024px) {
 }
