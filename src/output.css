@@ -584,11 +584,21 @@ video {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.translate-x-full {
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .cursor-pointer {
   cursor: pointer;
 }
 .list-none {
   list-style-type: none;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -928,7 +938,7 @@ header {
 .ticker-styling {
 	/* height: 80px;
 	width: 100%; */
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* position: absolute; */
 	background-color: #000000;
 	color: #ffffff;
@@ -942,9 +952,12 @@ header {
 	/* margin: 0; */
 	/* line-height: 50px; */
 	/* text-align: center; */
+	/* -moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
+	-moz-animation: scroll-left 2s linear infinite;
 	-webkit-animation: scroll-left 2s linear infinite;
-	animation: scroll-left 15s linear infinite;
+	animation: scroll-left 15s linear infinite; */
 }
 
 @-webkit-keyframes scroll-left {

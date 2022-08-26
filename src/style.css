@@ -240,7 +240,7 @@ header {
 .ticker-styling {
 	/* height: 80px;
 	width: 100%; */
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* position: absolute; */
 	background-color: #000000;
 	color: #ffffff;
@@ -254,12 +254,12 @@ header {
 	/* margin: 0; */
 	/* line-height: 50px; */
 	/* text-align: center; */
-	-moz-transform: translateX(100%);
+	/* -moz-transform: translateX(100%);
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 	-moz-animation: scroll-left 2s linear infinite;
 	-webkit-animation: scroll-left 2s linear infinite;
-	animation: scroll-left 15s linear infinite;
+	animation: scroll-left 15s linear infinite; */
 }
 @-moz-keyframes scroll-left {
 	0% {
