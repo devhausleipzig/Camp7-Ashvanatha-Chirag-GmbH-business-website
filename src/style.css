@@ -101,14 +101,14 @@
 	bottom: 25px;
 } */
 
-#main-logo > div {
+/* #main-logo > div {
 	width: 30px;
 	height: 30px;
 	position: relative;
 	background-color: white;
-}
+} */
 
-#pink-star {
+/* #pink-star {
 	top: 15px;
 	right: 20px;
 }
@@ -116,7 +116,7 @@
 #blue-star {
 	top: 25px;
 	left: 90px;
-}
+} */
 
 #main-logo:hover #pink-star {
 	animation: change-color 2.5s infinite;
@@ -134,7 +134,7 @@
 	}
 }
 
-header {
+/* header {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: var(--lightBeige);
@@ -142,12 +142,12 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
-#hero-img {
+/* #hero-img {
 	width: 360px;
 	height: auto;
-}
+} */
 
 /* #hero-txt {
 	font-size: 28px;
