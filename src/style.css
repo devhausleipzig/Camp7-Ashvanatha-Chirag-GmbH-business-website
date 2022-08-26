@@ -132,12 +132,6 @@ nav {
 	}
 }
 
-#menu-bars {
-	display: flex;
-	width: 100vw;
-	justify-content: flex-end;
-}
-
 header {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -303,9 +297,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* height: 158px; */
 	background-color: var(--lightPurple);
-	padding: 0 40px;
 	font-size: 78px;
 	font-weight: 100;
 	border: 2px solid black;
