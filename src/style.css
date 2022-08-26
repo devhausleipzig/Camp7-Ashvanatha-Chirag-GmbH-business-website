@@ -68,8 +68,8 @@ nav {
 	background: black;
 	color: white;
 	list-style: none;
-	padding-top: 4rem;
-	z-index: 50;
+	/* padding-top: 4rem; */
+	z-index: 40;
 }
 
 .menu a {
@@ -82,6 +82,7 @@ nav {
 .menu a:hover {
 	color: #6c64ce;
 }
+
 .showMenu {
 	transform: translateX(0);
 }

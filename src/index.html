@@ -20,15 +20,17 @@
 	</head>
 	<!-- The website follows an active behavior on click/hold stars appear-->
 	<body>
-		<div class="absolute z-50 top-4 right-4 cursor-pointer">
-			<i id="icon-before" class="text-8xl fa-solid fa-bars to-black z-50"></i>
-			<i
-				id="icon-after"
-				class="text-8xl fa-solid fa-xmark to-white z-50 opacity-0"
-			></i>
+		<div class="absolute z-40 top-4 right-4 cursor-pointer">
+			<i id="icon-before" class="text-4xl fa-solid fa-bars text-black"></i>
 		</div>
 		<ul class="menu">
-			<li><img src="./img/hero-disco-conf-svg.svg" /></li>
+			<div class="relative w-full">
+				<i
+					id="icon-after"
+					class="text-4xl fa-solid fa-xmark text-white z-50 absolute top-4 right-4 cursor-pointer"
+				></i>
+			</div>
+			<li class="pt-16"><img src="./img/hero-disco-conf-svg.svg" /></li>
 			<li><a class="menu-item" href="#">About</a></li>
 			<li><a class="menu-item" href="#">Global</a></li>
 			<li><a class="menu-item" href="#">Virtual</a></li>

@@ -89,12 +89,8 @@ const menuIcon = document.querySelector("#icon-before") as HTMLElement;
 function toggleMenu() {
 	if (menu.classList.contains("showMenu")) {
 		menu.classList.remove("showMenu");
-		closeIcon.style.opacity = "0";
-		menuIcon.style.opacity = "1";
 	} else {
 		menu.classList.add("showMenu");
-		closeIcon.style.opacity = "1";
-		menuIcon.style.opacity = "0";
 	}
 }
 
