@@ -162,18 +162,15 @@ header {
 	border-color: #000000;
 	background: #0568fd;
 	color: white;
-	font-size: xx-large;
-	font-weight: bold;
+	/* font-size: xx-large;
+	font-weight: bold; */
 	line-height: 1;
+	transition: transform 250ms;
+	transition: box-shadow;
 }
 
 #btn-box {
 	text-align: center;
-}
-
-.btn {
-	transition: transform 250ms;
-	transition: box-shadow;
 }
 
 .btn:hover {
@@ -182,15 +179,22 @@ header {
 }
 
 .a-lot-of-text-wrapper {
-	display: flex;
-	flex-direction: column;
+	/* display: flex; */
+	/* flex-direction: column; */
 }
 
 .a-lot-of-text {
-	display: flex;
+	/* display: flex; */
 	/* height: 1773px; */
 	background-color: #6c64ce;
 	text-align: center;
+}
+
+.a-lot-of-text p {
+	/* text-align: center; */
+	/* font-size: 80px; */
+	color: white;
+	/* margin-top: 150px; */
 }
 
 #random-imgs {
@@ -201,7 +205,7 @@ header {
 
 #random-imgs .fa-star {
 	color: #f290e8;
-	font-size: 60px;
+	/* font-size: 60px; */
 	/* padding: 20px 250px 0 20px; */
 	-webkit-text-stroke: 2px black;
 	text-shadow: 0px 10px black;
@@ -209,7 +213,7 @@ header {
 
 #random-imgs #fastar {
 	color: #b8b2f2;
-	font-size: 60px;
+	/* font-size: 60px; */
 	padding: 30px 40px 0 20px;
 	-webkit-text-stroke: 2px black;
 	text-shadow: 0px 10px black;
@@ -222,27 +226,20 @@ header {
 	background-color: #6c64ce;
 }
 
-.medium-icon {
+/* .medium-icon {
 	height: 200px;
 	width: 200px;
-}
+} */
 
-.a-lot-of-text p {
-	text-align: center;
-	/* font-size: 80px; */
-	color: white;
-	/* margin-top: 150px; */
-}
-
-.map-icon {
+/* .map-icon {
 	height: 400px;
 	width: 400px;
 	padding: 700px 30px 20px 0;
-}
+} */
 
 .ticker-styling {
-	height: 80px;
-	width: 100%;
+	/* height: 80px;
+	width: 100%; */
 	overflow: hidden;
 	/* position: absolute; */
 	background-color: #000000;
@@ -250,13 +247,13 @@ header {
 }
 
 .ticker-styling p {
-	font-size: xx-large;
-	width: 100%;
-	height: 100%;
-	padding-top: 20px;
-	margin: 0;
-	line-height: 50px;
-	text-align: center;
+	/* font-size: xx-large; */
+	/* width: 100%;
+	/* height: 100%; */
+	/* padding-top: 20px; */
+	/* margin: 0; */
+	/* line-height: 50px; */
+	/* text-align: center; */
 	-moz-transform: translateX(100%);
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
@@ -300,7 +297,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	background-color: var(--lightPurple);
-	font-size: 78px;
+	/* font-size: 78px; */
 	font-weight: 100;
 	border: 2px solid black;
 }
@@ -332,23 +329,24 @@ header {
 	padding: 20px;
 }
 
+/* not tailwind translated */
 #speaker-container {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: auto;
-	padding: 20px;
-	background-color: var(--turquoise);
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* height: auto; */
+	/* padding: 20px; */
+	/* background-color: var(--turquoise); */
 	color: var(--white);
 	text-shadow: 0px 20px black;
 	-webkit-text-stroke: 2px black;
 	border: 2px solid black;
 }
 
-#speaker-container .fa-star {
+/* #speaker-container .fa-star {
 	font-size: 90px;
 	padding: 0 20px 0 20px;
-}
+} */
 
 #speaker-gallery {
 	height: auto;
@@ -376,7 +374,7 @@ header {
 }
 
 .speaker-card p {
-	padding-left: 20px;
+	/* padding-left: 20px; */
 }
 
 .speaker-card img {
@@ -411,7 +409,7 @@ header {
 
 .profile-name {
 	/* padding: 6px 0 0 20px; */
-	font-size: 2rem;
+	/* font-size: 2rem; */
 	font-weight: bolder;
 }
 
@@ -433,10 +431,10 @@ header {
 	border: 2px solid black;
 }
 
-#faq-container .fa-star {
+/* #faq-container .fa-star {
 	font-size: 90px;
 	padding: 0 20px 0 20px;
-}
+} */
 
 .accordion-faq-title {
 	display: flex;
@@ -444,10 +442,10 @@ header {
 	justify-content: space-between;
 	height: 158px;
 	background-color: var(--lightBeige);
-	padding: 0 40px;
-	font-size: 78px;
-	font-weight: 100;
-	/* border-bottom: 2px solid black; */
+	/* padding: 0 40px; */
+	/* font-size: 78px;
+	font-weight: 100; */
+	border-bottom: 2px solid black;
 }
 
 .accordion-faq-body {
@@ -457,7 +455,7 @@ header {
 	padding: 40px 0 40px 40px;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	font-size: 25px;
+	/* font-size: 25px; */
 }
 
 .accordion-faq-body p {
@@ -484,7 +482,7 @@ footer {
 }
 
 #copyright {
-	font-size: x-large;
+	/* font-size: x-large; */
 	margin-left: 20px;
 }
 
