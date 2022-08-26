@@ -86,14 +86,18 @@ const hamburger = document.querySelector(".hamburger") as HTMLElement;
 const closeIcon = document.querySelector("#icon-after") as HTMLElement;
 const menuIcon = document.querySelector("#icon-before") as HTMLElement;
 
-function toggleMenu() {
-	if (menu.classList.contains("showMenu")) {
-		menu.classList.remove("showMenu");
-	} else {
-		menu.classList.add("showMenu");
-	}
-}
+// function toggleMenu() {
+// 	if (menu.classList.contains("showMenu")) {
+// 		menu.classList.remove("showMenu");
+// 	} else {
+// 		menu.classList.add("showMenu");
+// 	}
+// }
 
-menuIcon.addEventListener("click", toggleMenu);
-closeIcon.addEventListener("click", toggleMenu);
+menuIcon.addEventListener("click", () => {
+	menu.classList.toggle("showMenu");
+});
+closeIcon.addEventListener("click", () => {
+	menu.classList.toggle("showMenu");
+});
 ////////////////////////////////////////////////////

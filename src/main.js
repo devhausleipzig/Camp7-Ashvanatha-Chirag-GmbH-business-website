@@ -66,14 +66,17 @@ const menuItems = document.querySelectorAll(".menu-item");
 const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector("#icon-after");
 const menuIcon = document.querySelector("#icon-before");
-function toggleMenu() {
-    if (menu.classList.contains("showMenu")) {
-        menu.classList.remove("showMenu");
-    }
-    else {
-        menu.classList.add("showMenu");
-    }
-}
-menuIcon.addEventListener("click", toggleMenu);
-closeIcon.addEventListener("click", toggleMenu);
+// function toggleMenu() {
+// 	if (menu.classList.contains("showMenu")) {
+// 		menu.classList.remove("showMenu");
+// 	} else {
+// 		menu.classList.add("showMenu");
+// 	}
+// }
+menuIcon.addEventListener("click", () => {
+    menu.classList.toggle("showMenu");
+});
+closeIcon.addEventListener("click", () => {
+    menu.classList.toggle("showMenu");
+});
 ////////////////////////////////////////////////////
