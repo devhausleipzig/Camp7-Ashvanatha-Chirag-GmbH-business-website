@@ -19,7 +19,7 @@
 		<title>+Ash Chi GmbH+</title>
 	</head>
 	<!-- The website follows an active behavior on click/hold stars appear-->
-	<body>
+	<body class="font-sans">
 		<div class="absolute z-40 top-4 right-4 cursor-pointer">
 			<i id="icon-before" class="text-4xl fa-solid fa-bars text-black"></i>
 		</div>
@@ -51,7 +51,7 @@
 				</div>
 			</div>
 		</nav>
-		<header class="bg-lightBeige">
+		<header class="bg-lightBeige w-full">
 			<div id="hero-img-box">
 				<img id="hero-img" src="./img/hero-img.svg" />
 				<p id="hero-txt" class="text-lg text-center py-10">
@@ -65,21 +65,20 @@
 				</div>
 			</div>
 		</header>
-		<div class="relative flex overflow-x-hidden bg-black">
-			<!--This is live ticker with information about the event, created by Ash-->
-			<div class="py-12 animate-marquee whitespace-nowrap">
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
+		<div class="relative flex overflow-hidden bg-black w-full">
+			<div class="py-5 animate-marquee whitespace-nowrap text-white">
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
 			</div>
 			<div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
 			</div>
 		</div>
 		<div class="a-lot-of-text-wrapper">
@@ -110,13 +109,19 @@
 			<!-- the icons on the arrow change direction when toggled to dropdown-->
 			<!-- each item has a text on the left, and a large icon on the right-->
 			<!-- icons have some sort of animation-->
+
 			<!-- +++++++GLOBAL+++++++ -->
-			<div class="accordion-container bg-lightBeige">
-				<div class="accordion-title text-3xl bg-lightPurple">
+			<div class="accordion-container bg-lightBeige w-full">
+				<div
+					class="accordion-title h-auto w-full px-3 py-5 flex items-center justify-between font-bold text-3xl bg-lightPurple border-solid border-y-2 border-black"
+				>
 					<h3>GLOBAL</h3>
 					<i class="fa-solid fa-arrow-down" id="acc-arrow-global"></i>
 				</div>
-				<div class="accordion-body text-2xl" id="acc-body-global">
+				<div
+					class="accordion-body flex justify-between h-auto px-3 py-5 text-2xl"
+					id="acc-body-global"
+				>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -126,12 +131,17 @@
 				</div>
 			</div>
 			<!-- +++++++VIRTUAL+++++++  -->
-			<div class="accordion-container bg-lightBeige">
-				<div class="accordion-title text-3xl bg-lightPurple">
+			<div class="accordion-container bg-lightBeige w-full">
+				<div
+					class="accordion-title h-auto w-full px-3 py-5 flex items-center justify-between font-bold text-3xl bg-lightPurple border-solid border-y-2 border-black"
+				>
 					<h3>VIRTUAL</h3>
 					<i class="fa-solid fa-arrow-down" id="acc-arrow-virtual"></i>
 				</div>
-				<div class="accordion-body text-2xl" id="acc-body-virtual">
+				<div
+					class="accordion-body flex justify-between h-auto w-full px-3 py-5 text-2xl"
+					id="acc-body-virtual"
+				>
 					<p>
 						An online conference by design—Disco Conf takes place remotely and
 						welcomes all travelers across the information superhighway.
@@ -141,11 +151,16 @@
 			</div>
 			<!-- +++++++CURIOSITY-LED+++++++ -->
 			<div class="accordion-container bg-lightBeige">
-				<div class="accordion-title text-3xl bg-lightPurple">
+				<div
+					class="accordion-title h-auto w-full px-3 py-5 flex items-center justify-between font-bold text-3xl bg-lightPurple border-solid border-y-2 border-black"
+				>
 					<h3>CURIOSITY-LED</h3>
 					<i class="fa-solid fa-arrow-down" id="acc-arrow-curiosity"></i>
 				</div>
-				<div class="accordion-body text-2xl" id="acc-body-curiosity">
+				<div
+					class="accordion-body flex justify-between h-auto w-full px-3 py-5 text-2xl"
+					id="acc-body-curiosity"
+				>
 					<p>
 						Born of the explorer’s spirit and drive to learn, Disco Conf
 						inspires the pursuit of questions and building from insight.
@@ -159,162 +174,135 @@
 		</section>
 		<div
 			id="speaker-container"
-			class="bg-turquoise flex justify-center items-center"
+			class="bg-turquoise flex w-screen justify-center items-center border-solid border-y-2 border-black"
 		>
 			<!--This is the headline declaring the SPEAKER section, created by Ash-->
 			<!-- here we have one centered header with two stars adjacent on both sides-->
-			<i class="fa-solid fa-star text-4xl px-5 text-pink"></i>
-			<h2 class="text-6xl text-center py-5">SPEAKERS</h2>
-			<i class="fa-solid fa-star text-4xl px-5 text-purple"></i>
+			<div class="hide-icon"><i class="fa-solid fa-star"></i></div>
+			<h2 class="text-white text-6xl py-5 font-bold text-center text-shadow">
+				SPEAKERS
+			</h2>
+			<div class="hide-icon">
+				<i class="fa-solid fa-star text-4xl px-3 text-purple"></i>
+			</div>
 		</div>
-		<div class="relative flex overflow-x-hidden bg-black">
+		<div class="relative flex overflow-hidden bg-black w-full">
 			<!--This is live ticker with information about the event, created by Ash-->
-			<div class="py-12 animate-marquee whitespace-nowrap text-white">
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
-				<span class="text-4xl mx-4 font-bold">OCTOBER 25&26, 2022</span>
+			<div class="py-5 animate-marquee whitespace-nowrap text-white">
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
+				<span class="text-4xl mx-4 font-normal">OCTOBER 25&26, 2022</span>
 			</div>
 			<div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
-				<span class="mx-4 text-4xl font-bold">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
+				<span class="mx-4 text-4xl font-normal">OCTOBER 25&26, 2022</span>
 			</div>
 		</div>
 		<!--There is some uniform margin/padding here before the speaker-cards-->
-		<section id="speaker-gallery" class="bg-lightBeige">
-			<div id="speaker-cards-gallery">
-				<!--This is where we make 9 cards-->
-				<!-- Speaker 1 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/michaela-dam-unsplash.jpg);
-							"
-						></div>
+		<section id="speaker-gallery">
+			<div
+				class="bg-lightBeige w-full flex justify-between items-center h-auto"
+			>
+				<div id="speaker-cards-gallery" class="flex flex-wrap justify-around">
+					<!--This is where we make 9 cards
+
+				.speaker-card {
+					display: flex;
+					justify-content: space-around;
+					flex-direction: column;
+					height: auto;
+					width: 300px;
+					background-color: pink; for testing
+				}
+				Speaker 1 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-dam"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">MICHAELA DAM</p>
+						<p class="profile-info text-xl pl-5">Founder | Robotic Institute</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">MICHAELA DAM</p>
-					<p class="profile-info text-xl pl-5">Founder | Robotic Institute</p>
-				</div>
-				<!-- Speaker 2 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/jurica-koletic-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 2 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-rod"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">GONZALO RODRIGUEZ</p>
+						<p class="profile-info text-xl pl-5">
+							Data Analyst Lead | PowerRangers Enterprise
+						</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">GONZALO RODRIGUEZ</p>
-					<p class="profile-info text-xl pl-5">
-						Data Analyst Lead | PowerRangers Enterprise
-					</p>
-				</div>
-				<!-- Speaker 3 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/zoe-fernandez-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 3 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-cor"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">CORINNA JUERGENS</p>
+						<p class="profile-info text-xl pl-5">Co-Founder | HENKEL GmbH</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">CORINNA JUERGENS</p>
-					<p class="profile-info text-xl pl-5">Co-Founder | HENKEL GmbH</p>
-				</div>
-				<!-- Speaker 4 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/vince-veras-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 4 -->
+					<div
+						class="speaker-card flex justify-around flex-col w-auto py-5bg-turquoise"
+					>
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-ver"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">VERA LINDEMANN</p>
+						<p class="profile-info text-xl pl-5">
+							Research Lead | Devhaus Leipzig
+						</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">VERA LINDEMANN</p>
-					<p class="profile-info text-xl pl-5">
-						Research Lead | Devhaus Leipzig
-					</p>
-				</div>
-				<!-- Speaker 5 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/joseph-gonzalez-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 5 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-jos"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">JOSEPH GONZALEZ</p>
+						<p class="profile-info text-xl pl-5">
+							Model Scout | Americas Next Topmodel
+						</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">JOSEPH GONZALEZ</p>
-					<p class="profile-info text-xl pl-5">
-						Model Scout | Americas Next Topmodel
-					</p>
-				</div>
-				<!-- Speaker 6 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/christopher-campbell-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 6 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-chr"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">CHRISTOPHER CAMPBELL</p>
+						<p class="profile-info text-xl pl-5">
+							AI Photographer | LabAesthetics
+						</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">CHRISTOPHER CAMPBELL</p>
-					<p class="profile-info text-xl pl-5">
-						AI Photographer | LabAesthetics
-					</p>
-				</div>
-				<!-- Speaker 7 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/julian-wan-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 7 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-jul"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">JULIAN WAN</p>
+						<p class="profile-info text-xl pl-5">
+							UX Artist | University of Ohio
+						</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">JULIAN WAN</p>
-					<p class="profile-info text-xl pl-5">
-						UX Artist | University of Ohio
-					</p>
-				</div>
-				<!-- Speaker 8 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/may-gauthier-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 8 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-may"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">MAY GAUTHIER</p>
+						<p class="profile-info text-xl pl-5">Forest Guide | Google Maps</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">MAY GAUTHIER</p>
-					<p class="profile-info text-xl pl-5">Forest Guide | Google Maps</p>
-				</div>
-				<!-- Speaker 9 -->
-				<div class="speaker-card">
-					<div id="zoomBOut">
-						<div
-							id="zoomBIn"
-							style="
-								background-image: url(img/profilepics/podpros-unsplash.jpg);
-							"
-						></div>
+					<!-- Speaker 9 -->
+					<div class="speaker-card flex justify-around flex-col w-auto py-5">
+						<div class="card-zoom">
+							<div class="card-zoom-image bg-pod"></div>
+						</div>
+						<p class="profile-name text-3xl pl-5">PODOLSKI PRODOSKAYA</p>
+						<p class="profile-info text-xl pl-5">Business Analyst | SAP</p>
 					</div>
-					<p class="profile-name text-3xl pl-5">PODOLSKI PRODOSKAYA</p>
-					<p class="profile-info text-xl pl-5">Business Analyst | SAP</p>
-				</div>
 				<!-------------------------------------------------->
 				<!-- It is one giant div, with 9 tiny divs inside-->
 				<!-------------------------------------------------->
@@ -331,13 +319,25 @@
 				<!-- we may wrap the text part in another div-->
 			</div>
 		</section>
-
 		<section id="FAQ">
 			<!--follow the same pattern as speaker header, created by Ash-->
-			<div id="faq-container" class="bg-pink">
-				<i class="fa-solid fa-star text-4xl px-5" style="color: #6c64ce"></i>
-				<h2 class="text-6xl text-center">FAQ</h2>
-				<i class="fa-solid fa-star text-4xl px-5" style="color: #38b3d1"></i>
+			<div
+				id="faq-container"
+				class="flex justify-center items-center border-solid border-y-2 border-black bg-pink w-full"
+			>
+				<div class="hide-icon">
+					<i
+						class="fa-solid fa-star text-4xl px-5 text-shadow text-lightPurple"
+					></i>
+				</div>
+				<h2 class="text-white text-6xl font-bold text-center py-5 text-shadow">
+					FAQ
+				</h2>
+				<div class="hide-icon">
+					<i
+						class="fa-solid fa-star text-4xl px-5 text-shadow text-turquoise"
+					></i>
+				</div>
 			</div>
 			<div id="accordion-faq-dropdown">
 				<!--There are 6 items in the list here-->
@@ -347,13 +347,13 @@
 				<div class="accordion-container">
 					<!-- +++++++Q1: When is Disco Conf? +++++++ -->
 					<div
-						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
+						class="h-auto w-full flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>When is Disco Conf?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-when"></i>
 					</div>
 					<div
-						class="accordion-faq-body bg-lightBeige hidden"
+						class="accordion-faq-body bg-lightBeige hidden w-full"
 						id="acc-faq-body"
 					>
 						<p
@@ -366,7 +366,7 @@
 
 					<!-- +++++++Q2: Where is it? +++++++ -->
 					<div
-						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
+						class="h-auto w-full flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>Where is it?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-where"></i>
@@ -382,14 +382,14 @@
 					</div>
 					<!-- +++++++Q3: Will the conference be recorderd? +++++++ -->
 					<div
-						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
+						class="h-auto w-full flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>Will the conference be recorderd?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-will"></i>
 					</div>
 					<div class="accordion-faq-body hidden" id="acc-faq-body3">
 						<p
-							class="text-base p-8 bg-lightBeige border-solid border-b-2 border-black"
+							class="text-base p-8 w-full bg-lightBeige border-solid border-b-2 border-black"
 						>
 							To keep the good times rolling after Disco Conf ends, we’ll be
 							sharing recordings of our speaker presentations so you can catch
@@ -398,14 +398,14 @@
 					</div>
 					<!-- +++++++Q4: Is Disco Conf really free? +++++++ -->
 					<div
-						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
+						class="h-auto w-full flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>Is Disco Conf really free?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-free"></i>
 					</div>
 					<div class="accordion-faq-body hidden" id="acc-faq-body4">
 						<p
-							class="text-base p-8 bg-lightBeige border-solid border-b-2 border-black"
+							class="text-base w-full p-8 bg-lightBeige border-solid border-b-2 border-black"
 						>
 							But I must explain to you how all this mistaken idea of
 							reprobating pleasure and extolling pain arose. To do so, I will
@@ -419,7 +419,7 @@
 					</div>
 					<!-- +++++++Q5: I can’t wait. +++++++ -->
 					<div
-						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
+						class="h-auto w-full flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>
 							I can’t wait til October. Is there a place to stay up to date
@@ -445,7 +445,7 @@
 			<!--basically the heade with new text, subtext, and different button text-->
 			<!-- but the behaviors are similar-->
 		</section>
-		<footer class="bg-black">
+		<footer class="bg-black w-full">
 			<!--Flex div-->
 			<!-- Copy right on the left-->
 			<!-- Three social media icons which have the same effect of the buttons, it looks like it pops up-->
