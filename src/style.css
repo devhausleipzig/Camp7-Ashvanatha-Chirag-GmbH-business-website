@@ -155,19 +155,19 @@ header {
 	padding-bottom: 40px;
 } */
 
-.btn {
+/* .btn {
 	width: 360px;
-	height: 84px;
+	height: 84px; 
 	border-radius: 50px;
 	border-color: #000000;
 	background: #0568fd;
 	color: white;
-	/* font-size: xx-large;
-	font-weight: bold; */
+	font-size: xx-large;
+	font-weight: bold;
 	line-height: 1;
 	transition: transform 250ms;
 	transition: box-shadow;
-}
+} */
 
 #btn-box {
 	text-align: center;
