@@ -169,14 +169,14 @@ header {
 	transition: box-shadow;
 } */
 
-#btn-box {
+/* #btn-box {
 	text-align: center;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
 	transform: translateY(-10px);
 	box-shadow: 0px 10px black;
-}
+} */
 
 .a-lot-of-text-wrapper {
 	/* display: flex; */

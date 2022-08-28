@@ -565,8 +565,8 @@ video {
 .h-24 {
   height: 6rem;
 }
-.h-20 {
-  height: 5rem;
+.h-16 {
+  height: 4rem;
 }
 .h-12 {
   height: 3rem;
@@ -598,6 +598,9 @@ video {
 }
 .rounded-full {
   border-radius: 9999px;
+}
+.border-2 {
+  border-width: 2px;
 }
 .border-solid {
   border-style: solid;
@@ -653,21 +656,21 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .text-base {
   font-size: 1rem;
@@ -877,14 +880,14 @@ header {
 	transition: box-shadow;
 } */
 
-#btn-box {
+/* #btn-box {
 	text-align: center;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
 	transform: translateY(-10px);
 	box-shadow: 0px 10px black;
-}
+} */
 
 .a-lot-of-text-wrapper {
 	/* display: flex; */
@@ -1210,4 +1213,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+}
+
+.hover\:shadow-\[0_10px_0px_0px_rgba\(0\2c 0\2c 0\)\]:hover {
+  --tw-shadow: 0 10px 0px 0px rgba(0,0,0);
+  --tw-shadow-colored: 0 10px 0px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
