@@ -51,7 +51,7 @@
 				</div>
 			</div>
 		</nav>
-		<header>
+		<header class="bg-lightBeige">
 			<div id="hero-img-box">
 				<img id="hero-img" src="./img/hero-img.svg" />
 				<p id="hero-txt" class="text-lg text-center py-10">
@@ -63,7 +63,7 @@
 			</div>
 		</header>
 		<div class="a-lot-of-text-wrapper">
-			<div class="ticker-styling h-12">
+			<div class="ticker-styling h-12 bg-black">
 				<!--This is live ticker with information about the event, created by Ash-->
 				<p class="text-4xl text-center">
 					OCTOBER 25&26, 2022 OCTOBER 25&26, 2022 OCTOBER 25&26, 2022
@@ -97,8 +97,8 @@
 			<!-- each item has a text on the left, and a large icon on the right-->
 			<!-- icons have some sort of animation-->
 			<!-- +++++++GLOBAL+++++++ -->
-			<div class="accordion-container">
-				<div class="accordion-title text-3xl">
+			<div class="accordion-container bg-lightBeige">
+				<div class="accordion-title text-3xl bg-lightPurple">
 					<h3>GLOBAL</h3>
 					<i class="fa-solid fa-arrow-down" id="acc-arrow-global"></i>
 				</div>
@@ -112,8 +112,8 @@
 				</div>
 			</div>
 			<!-- +++++++VIRTUAL+++++++  -->
-			<div class="accordion-container">
-				<div class="accordion-title text-3xl">
+			<div class="accordion-container bg-lightBeige">
+				<div class="accordion-title text-3xl bg-lightPurple">
 					<h3>VIRTUAL</h3>
 					<i class="fa-solid fa-arrow-down" id="acc-arrow-virtual"></i>
 				</div>
@@ -126,8 +126,8 @@
 				</div>
 			</div>
 			<!-- +++++++CURIOSITY-LED+++++++ -->
-			<div class="accordion-container">
-				<div class="accordion-title text-3xl">
+			<div class="accordion-container bg-lightBeige">
+				<div class="accordion-title text-3xl bg-lightPurple">
 					<h3>CURIOSITY-LED</h3>
 					<i class="fa-solid fa-arrow-down" id="acc-arrow-curiosity"></i>
 				</div>
@@ -150,15 +150,15 @@
 			<h2 class="text-6xl text-center">SPEAKERS</h2>
 			<i class="fa-solid fa-star text-4xl px-5" style="color: #b8b2f2"></i>
 		</div>
-		<div class="ticker-styling h-12 overflow-x-hidden">
+		<div class="ticker-styling h-12 overflow-x-hidden bg-black">
 			<p
-				class="text-4xl text-center whitespace-nowrap translate-x-full transition-transform"
+				class="text-4xl text-center whitespace-nowrap transition-transform translate-x-full"
 			>
 				OCTOBER 25&26, 2022 OCTOBER 25&26, 2022 OCTOBER 25&26, 2022
 			</p>
 		</div>
 		<!--There is some uniform margin/padding here before the speaker-cards-->
-		<section id="speaker-gallery">
+		<section id="speaker-gallery" class="bg-lightBeige">
 			<div id="speaker-cards-gallery">
 				<!--This is where we make 9 cards-->
 				<!-- Speaker 1 -->
@@ -307,7 +307,7 @@
 
 		<section id="FAQ">
 			<!--follow the same pattern as speaker header, created by Ash-->
-			<div id="faq-container">
+			<div id="faq-container" class="bg-pink">
 				<i class="fa-solid fa-star text-4xl px-5" style="color: #6c64ce"></i>
 				<h2 class="text-6xl text-center">FAQ</h2>
 				<i class="fa-solid fa-star text-4xl px-5" style="color: #38b3d1"></i>
@@ -320,14 +320,18 @@
 				<div class="accordion-container">
 					<!-- +++++++Q1: When is Disco Conf? +++++++ -->
 					<div
-						class="accordion-faq-title text-2xl"
-						style="border-bottom: 2px solid black"
+						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>When is Disco Conf?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-when"></i>
 					</div>
-					<div class="accordion-faq-body" id="acc-faq-body">
-						<p class="text-base">
+					<div
+						class="accordion-faq-body bg-lightBeige hidden"
+						id="acc-faq-body"
+					>
+						<p
+							class="text-base p-8 bg-lightBeige border-solid border-b-2 border-black"
+						>
 							Disco Conf will take place over two days from October 25-26, live
 							streaming from 10am - 4pm daily (🇺🇸ET) / 5pm - 11pm (🇪🇺CET).
 						</p>
@@ -335,14 +339,15 @@
 
 					<!-- +++++++Q2: Where is it? +++++++ -->
 					<div
-						class="accordion-faq-title text-2xl"
-						style="border-bottom: 2px solid black"
+						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>Where is it?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-where"></i>
 					</div>
-					<div class="accordion-faq-body text-2xl" id="acc-faq-body2">
-						<p class="text-base">
+					<div class="hidden" id="acc-faq-body2">
+						<p
+							class="text-base p-8 bg-lightBeige border-solid border-b-2 border-black"
+						>
 							Just as Maze is globally distributed, Disco Conf is an entirely
 							remote and virtual conference. Join in from anywhere and represent
 							your place among a global audience.
@@ -350,14 +355,15 @@
 					</div>
 					<!-- +++++++Q3: Will the conference be recorderd? +++++++ -->
 					<div
-						class="accordion-faq-title text-2xl"
-						style="border-bottom: 2px solid black"
+						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>Will the conference be recorderd?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-will"></i>
 					</div>
-					<div class="accordion-faq-body" id="acc-faq-body3">
-						<p class="text-base">
+					<div class="accordion-faq-body hidden" id="acc-faq-body3">
+						<p
+							class="text-base p-8 bg-lightBeige border-solid border-b-2 border-black"
+						>
 							To keep the good times rolling after Disco Conf ends, we’ll be
 							sharing recordings of our speaker presentations so you can catch
 							up on what you missed—or play back your favorite highlights.
@@ -365,14 +371,15 @@
 					</div>
 					<!-- +++++++Q4: Is Disco Conf really free? +++++++ -->
 					<div
-						class="accordion-faq-title text-2xl"
-						style="border-bottom: 2px solid black"
+						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>Is Disco Conf really free?</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-free"></i>
 					</div>
-					<div class="accordion-faq-body" id="acc-faq-body4">
-						<p class="text-base">
+					<div class="accordion-faq-body hidden" id="acc-faq-body4">
+						<p
+							class="text-base p-8 bg-lightBeige border-solid border-b-2 border-black"
+						>
 							But I must explain to you how all this mistaken idea of
 							reprobating pleasure and extolling pain arose. To do so, I will
 							give you a complete account of the system, and expound the actual
@@ -385,8 +392,7 @@
 					</div>
 					<!-- +++++++Q5: I can’t wait. +++++++ -->
 					<div
-						class="accordion-faq-title text-2xl"
-						style="border-bottom: 2px solid black"
+						class="h-auto flex justify-between p-8 items-center text-2xl font-bold bg-lightBeige border-solid border-b-2 border-black"
 					>
 						<h6>
 							I can’t wait til October. Is there a place to stay up to date
@@ -394,8 +400,10 @@
 						</h6>
 						<i class="fa-solid fa-arrow-down" id="acc-arrow-wait"></i>
 					</div>
-					<div class="accordion-faq-body" id="acc-faq-body5">
-						<p class="text-base">
+					<div class="accordion-faq-body hidden" id="acc-faq-body5">
+						<p
+							class="text-base p-8 bg-lightBeige border-solid border-b-2 border-black"
+						>
 							Once registered you’ll be kept in the loop on all details directly
 							through email. However, The Maze Community will also be unveiling
 							a space to connect and socialize on all things Disco Conf. If you
@@ -410,19 +418,27 @@
 			<!--basically the heade with new text, subtext, and different button text-->
 			<!-- but the behaviors are similar-->
 		</section>
-		<footer>
+		<footer class="bg-black">
 			<!--Flex div-->
 			<!-- Copy right on the left-->
 			<!-- Three social media icons which have the same effect of the buttons, it looks like it pops up-->
-			<div id="copyright" class="text-xl">© Ashvanatha Chirag GmbH 2022</div>
-			<div id="social-media">
-				<div class="social-circle" id="social-circle-linkedin">
+			<div id="copyright" class="text-xl ml-5">
+				© Ashvanatha Chirag GmbH 2022
+			</div>
+			<div id="social-media" class="flex justify-around">
+				<div
+					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-purple"
+				>
 					<i class="fa-brands fa-linkedin-in"></i>
 				</div>
-				<div class="social-circle" id="social-circle-twitter">
+				<div
+					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-pink"
+				>
 					<i class="fa-brands fa-twitter"></i>
 				</div>
-				<div class="social-circle" id="social-circle-instagram">
+				<div
+					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-turquoise"
+				>
 					<i class="fa-brands fa-instagram"></i>
 				</div>
 			</div>
