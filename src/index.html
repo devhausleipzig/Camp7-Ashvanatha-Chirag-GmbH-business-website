@@ -21,7 +21,7 @@
 	<!-- The website follows an active behavior on click/hold stars appear-->
 	<body class="font-sans">
 		<div class="absolute z-40 top-4 right-4 cursor-pointer">
-			<i id="icon-before" class="text-4xl fa-solid fa-bars text-black"></i>
+			<i id="icon-before" class="text-4xl fa-solid fa-bars text-white text-shadow-outline"></i>
 		</div>
 		<ul
 			class="menu fixed -translate-x-full transition-transform top-0 left-0 right-0 bottom-0 bg-black text-white list-none z-40 no-underline font-bold text-4xl"
@@ -51,18 +51,14 @@
 				</div>
 			</div>
 		</nav>
-		<header class="bg-lightBeige w-full">
-			<div id="hero-img-box">
-				<img id="hero-img" src="./img/hero-img.svg" />
+		<header>
+			<div class="flex flex-col justify-around items-center bg-lightBeige w-full h-auto py-10">
+				<img id="hero-img" src="./img/hero-img.svg" class="w-auto h-full p-5"/>
 				<p id="hero-txt" class="text-lg text-center py-10">
 					A journey into discovery, design, and research by Maze
 				</p>
-				<!-- <div id="btn-box">
-					<button class="btn text-2xl font-bold">REGISTER FOR FREE</button>
-				</div> -->
-				<div id="btn-box">
-					<button class="btn text-2xl font-bold">REGISTER FOR FREE</button>
-				</div>
+				<a href="https://devhausleipzig.de/contact" target="_blank"
+				class="bg-blue w-80 h-20 rounded-full border-solid border-2 border-black flex justify-center items-center hover:box-shadow text-white text-2xl text-center font-bold">REGISTER FOR FREE</a>
 			</div>
 		</header>
 		<div class="relative flex overflow-hidden bg-black w-full">
@@ -82,19 +78,21 @@
 			</div>
 		</div>
 		<div class="a-lot-of-text-wrapper">
-			<div class="a-lot-of-text">
-				<div id="random-imgs">
-					<i class="fa-solid fa-star text-4xl"></i>
-					<img class="medium-icon w-28" src="./img/magnifying_glass.svg" />
-					<i class="fa-solid fa-star text-4xl" id="fastar"></i>
+			<div class="a-lot-of-text flex-row items-center bg-purple">
+				<div class="flex flex-row items-center justify-around p-5">
+					<i class="fa-solid fa-star flex text-4xl text-lightPink text-shadow"></i>
+					<img class="flex w-46" src="./img/magnifying_glass.svg" />
+					<i class="fa-solid fa-star flex text-4xl text-pink text-shadow" id="fastar"></i>
 				</div>
-				<p class="text-3xl">
+				<div class="relative flex flex-col items-center justify-around p-10">
+				<span class="text-6xl text-white text-center">
 					Discovery is a mindset. It transforms questions into decisions, data
-					into stories, and insights into direction. Join us at Disco Conf to
+					into stories, and insights into direction. </span><span class="text-6xl text-white text-center pt-10">Join us at Disco Conf to
 					embrace the power in curiosity, collaboration, and continuous
 					learning.
-				</p>
-				<img class="map-icon w-36 inline-block" src="./img/about_map.svg" />
+				</span>
+			
+				<img class="w-96 p-10 flex items-center" src="./img/about_map.svg" />
 			</div>
 		</div>
 
@@ -127,7 +125,7 @@
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 						ad minim veniam.
 					</p>
-					<img src="./img/discoconf-global.avif" alt="globe" />
+					<!-- <img src="./img/discoconf-global.avif" alt="globe" /> -->
 				</div>
 			</div>
 			<!-- +++++++VIRTUAL+++++++  -->
@@ -146,7 +144,7 @@
 						An online conference by design—Disco Conf takes place remotely and
 						welcomes all travelers across the information superhighway.
 					</p>
-					<img src="./img/discoconf-virtual.avif" alt="computer" />
+					<!-- <img src="./img/discoconf-virtual.avif" alt="computer" /> -->
 				</div>
 			</div>
 			<!-- +++++++CURIOSITY-LED+++++++ -->
@@ -165,10 +163,10 @@
 						Born of the explorer’s spirit and drive to learn, Disco Conf
 						inspires the pursuit of questions and building from insight.
 					</p>
-					<img
+					<!-- <img
 						src="./img/discoconf-curiosity-led-new.avif"
 						alt="spying glasses"
-					/>
+					/> -->
 				</div>
 			</div>
 		</section>
@@ -178,12 +176,12 @@
 		>
 			<!--This is the headline declaring the SPEAKER section, created by Ash-->
 			<!-- here we have one centered header with two stars adjacent on both sides-->
-			<div class="hide-icon"><i class="fa-solid fa-star"></i></div>
+			<div class="hide-icon"><i class="fa-solid fa-star text-4xl px-3 text-pink text-shadow"></i></div>
 			<h2 class="text-white text-6xl py-5 font-bold text-center text-shadow">
 				SPEAKERS
 			</h2>
 			<div class="hide-icon">
-				<i class="fa-solid fa-star text-4xl px-3 text-purple"></i>
+				<i class="fa-solid fa-star text-4xl px-3 text-purple text-shadow"></i>
 			</div>
 		</div>
 		<div class="relative flex overflow-hidden bg-black w-full">
@@ -208,17 +206,8 @@
 			<div
 				class="bg-lightBeige w-full flex justify-between items-center h-auto"
 			>
-				<div id="speaker-cards-gallery" class="flex flex-wrap justify-around">
+				<div id="speaker-cards-gallery" class="flex flex-wrap w-full justify-around">
 					<!--This is where we make 9 cards
-
-				.speaker-card {
-					display: flex;
-					justify-content: space-around;
-					flex-direction: column;
-					height: auto;
-					width: 300px;
-					background-color: pink; for testing
-				}
 				Speaker 1 -->
 					<div class="speaker-card flex justify-around flex-col w-auto py-5">
 						<div class="card-zoom">
@@ -434,8 +423,7 @@
 							Once registered you’ll be kept in the loop on all details directly
 							through email. However, The Maze Community will also be unveiling
 							a space to connect and socialize on all things Disco Conf. If you
-							haven’t already joined the Maze Community, you can join the (add
-							link) directory here.
+							haven’t already joined the Maze Community, you can join the <a href="https://github.com/devhausleipzig" target="_blank" class="italic hover:font-bold">directory</a> here.
 						</p>
 					</div>
 				</div>
@@ -445,29 +433,20 @@
 			<!--basically the heade with new text, subtext, and different button text-->
 			<!-- but the behaviors are similar-->
 		</section>
-		<footer class="bg-black w-full">
+		<footer class="absolute flex justify-between items-center h-28 w-full bg-black text-white">
 			<!--Flex div-->
 			<!-- Copy right on the left-->
 			<!-- Three social media icons which have the same effect of the buttons, it looks like it pops up-->
-			<div id="copyright" class="text-xl ml-5">
+			<div id="copyright" class="text-xl ml-5 text-white">
 				© Ashvanatha Chirag GmbH 2022
 			</div>
-			<div id="social-media" class="flex justify-around">
-				<div
-					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-purple"
-				>
-					<i class="fa-brands fa-linkedin-in"></i>
-				</div>
-				<div
-					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-pink"
-				>
-					<i class="fa-brands fa-twitter"></i>
-				</div>
-				<div
-					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-turquoise"
-				>
-					<i class="fa-brands fa-instagram"></i>
-				</div>
+			<div class="flex justify-around">
+				<a href="https://de.linkedin.com/company/devhaus-leipzig" target="_blank"
+					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-purple"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="https://twitter.com/devhausleipzig?lang=en" target="_blank"
+					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-pink"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com/devhausleipzig/?hl=en" target="_blank"
+					class="flex justify-around items-center h-11 w-11 rounded-full mx-2 bg-turquoise"><i class="fa-brands fa-instagram"></i></a>
 			</div>
 		</footer>
 	</body>
